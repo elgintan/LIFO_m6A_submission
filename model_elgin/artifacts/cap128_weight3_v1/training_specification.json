@@ -1,0 +1,39 @@
+{
+  "config": {
+    "width": 48,
+    "dropout": 0.25,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "pos_weight": 3.0,
+    "cap": 128,
+    "summary_n": 63,
+    "pool": "attention",
+    "context_mode": "none",
+    "min_sites": 30
+  },
+  "identity": {
+    "cache_manifest_sha256": "a5077952fcdc7e8063a1b4fabb209b918e01bbb9f087830d02c96980487a26fa",
+    "data0_input_sha256": "622410b2918692b75a880b753f1a621e8d892d6dbc13c1f430babc5543a0584e",
+    "labels_sha256": "6758f002db36835c188c9d6fb039b4599494ca9dcc816c26cc22a2c04ee42978",
+    "folds_sha256": "986b7872084cf762f1c3944b1eacc1e8f1ff69cb2848630f80685063541da9b0",
+    "source_sha256": {
+      "train.py": "ffb6a7b157716c997ca46288817c8515c04ef5dd8c24506856f8ab84117d8dc5",
+      "model.py": "0fa59b34cd85f1981eccd910d704412cb54de6602fe05fbff8d7ab4362d402c2",
+      "context_features.py": "4a35f26e54aab767af0982f495f6d1abb7f5aa7bc1a3accb76e2bc3e0378c9e0",
+      "data.py": "91f8a13e3ecb6cf5461c2f33a640f523e7884362c8545e4125f9f5c4b14ebf70",
+      "common.py": "6a26cab89aea3155db924244bae1b69080c2f5037fb1ba00dc231d8487d30eaa",
+      "prepare.py": "4d3e77c499fd620e7ab20db97115e7b400cf4e1aa13fb9760cee1975b9463167",
+      "model_evaluation/evaluate.py": "43217301e0c9f9aeac821175763c096a171ec699fe342c04099f0d09a42e7727",
+      "tools/train_read_cap.py": "a2dae09b29e2fef12406792372145b4fab8ff268dcb9d5258ddfe21a64e77f1f",
+      "READ_CAP_EXPERIMENT.md": "4c0d1157bdd88f17df6f9e11ac40072b759787551f9f257ac54318ae4757f149"
+    },
+    "training_entrypoint_sha256": "a2dae09b29e2fef12406792372145b4fab8ff268dcb9d5258ddfe21a64e77f1f",
+    "experiment_plan_sha256": "4c0d1157bdd88f17df6f9e11ac40072b759787551f9f257ac54318ae4757f149"
+  },
+  "seed": 2026,
+  "batch_size": 256,
+  "threads": 4,
+  "selected_epochs": 18,
+  "selection_rule": "median of five inner-selected epoch counts",
+  "cv_metrics_sha256": "63f89cc94b008f6fccbbf90f0baf2f709517862875fd1a88d4e1770fc2301d23"
+}

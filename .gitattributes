@@ -1,0 +1,3 @@
+# Preserve the original model/source/recipe/fold fingerprints across platforms.
+* -text whitespace=cr-at-eol
+*.pt binary

@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "kind": "context_reference_v1",
+  "stage": "final_data0",
+  "context_mode": "none",
+  "allow_development_model": false,
+  "input_basename": "input.json",
+  "model_basename": "model.pt",
+  "output_basename": "expected.csv",
+  "input_sha256": "c8e400bf677d228bf8683c5bb61c0cfb105e3a3f7b5b9235c06efdaf015a334e",
+  "model_sha256": "b2d38ff29a918cb6213ad7df2c76786c5f56d3640bd055ff179d211b0e979668",
+  "output_sha256": "87eeb1e5d03bbb302701acae16ff17c4bed3cb90034ad8bf92bebaa8dbfcf63c",
+  "code_sha256": {
+    "predict.py": "fdc1a6bad52b725265d9f195fe4bf467266827cd6bbb130a8de5394bc4fb63c0",
+    "model.py": "0fa59b34cd85f1981eccd910d704412cb54de6602fe05fbff8d7ab4362d402c2",
+    "data.py": "91f8a13e3ecb6cf5461c2f33a640f523e7884362c8545e4125f9f5c4b14ebf70",
+    "context_features.py": "4a35f26e54aab767af0982f495f6d1abb7f5aa7bc1a3accb76e2bc3e0378c9e0",
+    "common.py": "6a26cab89aea3155db924244bae1b69080c2f5037fb1ba00dc231d8487d30eaa"
+  },
+  "n_sites": 10,
+  "n_reads": 1887,
+  "exact_input_key_coverage": true,
+  "all_reads_used": true,
+  "labels_read": false,
+  "threads": 4,
+  "batch_size_limit": 32,
+  "max_padded_reads_budget": 65536,
+  "maximum_observed_padded_reads": 2060,
+  "n_batches": 1,
+  "resources": {
+    "wall_seconds": 0.1194715999881737,
+    "cpu_seconds": 0.21875,
+    "sampled_peak_process_tree_rss_mib": 289.95703125,
+    "sampling_interval_seconds": 0.2,
+    "sampling_errors": 0
+  },
+  "measurement_scope": "input/model hashing and loading, complete parsing, prediction, CSV verification/write; imports excluded",
+  "hardware": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 26 Model 36 Stepping 0, AuthenticAMD",
+    "logical_cpus": 20,
+    "total_ram_bytes": 29841797120
+  },
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3"
+  }
+}

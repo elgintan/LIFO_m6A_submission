@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "files_sha256": {
+    "example/expected.csv": "87eeb1e5d03bbb302701acae16ff17c4bed3cb90034ad8bf92bebaa8dbfcf63c",
+    "example/expected.csv.manifest.json": "3eb0d8eb83dd8596225a0b567602cd0a64c44d8154f280b80925b1d80f962f5f",
+    "example/input.json": "c8e400bf677d228bf8683c5bb61c0cfb105e3a3f7b5b9235c06efdaf015a334e",
+    "example_check.txt": "4941b7d74c57b92bd2bb0b19cb0e0e00afa445caad187ecac891ffc45fa465c6",
+    "metadata.json": "32890e837bde8adb56c9c0c832c1394bf1f811d520994ebe1154b70f7d953d2a",
+    "model.pt": "b2d38ff29a918cb6213ad7df2c76786c5f56d3640bd055ff179d211b0e979668",
+    "training_specification.json": "ce6c40e89477659f7274e27de529c703e75e19881d421fa4aaf12cdcc2ad1e80"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_sha256": "b2d38ff29a918cb6213ad7df2c76786c5f56d3640bd055ff179d211b0e979668",
+  "stage": "final_data0",
+  "config": {
+    "width": 48,
+    "dropout": 0.25,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "pos_weight": 3.0,
+    "cap": 128,
+    "summary_n": 63,
+    "pool": "attention",
+    "context_mode": "none",
+    "min_sites": 30
+  },
+  "epochs": 18,
+  "seed": 2026,
+  "training_sites": 121838,
+  "training_reads": 11027106,
+  "calling_rule": "0.5 working reporting cutoff; continuous outputs; no fitted calibrator",
+  "selection_plan_sha256": "e11a7434e2668410de75be51f00f5af6741ade471982f3513391b5408ef0b4d2",
+  "final_entrypoint_sha256": "68e4c8bbb9f1524ea9e593481af9e0e4e9b4fca580a92574a56a244814da3029",
+  "example_sites": 10,
+  "example_reads": 1887,
+  "example_scope": "First ten data0 sites, for software checks only; not unseen validation",
+  "training_data": "data0 only; no data1/data2/SG-NEx fitting",
+  "validation": "Use saved five-fold OOF scores, not fitted-data0 final predictions"
+}
