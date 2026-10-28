@@ -10,8 +10,8 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "406f892cdc731d74454179136c71d51ebd1797c1c3819912607cbe14054199c6",
-      "size_bytes": 238
+      "sha256": "b55d253242ab2c0ee925b4c6f3cb2bbe283a08457fcd9aae0fc3f5fd511fc0fe",
+      "size_bytes": 232
     },
     {
       "path": "eda/received/shared_folds/data0_folds.csv",
@@ -19,87 +19,87 @@
       "size_bytes": 4702028
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/complete.json",
+      "path": "model/artifacts/cap128_weight3_v1/complete.json",
       "sha256": "ffaf164b7a247dfc4db5b83e981c543ba1c45fb984057b8ab56b66cc4be12652",
       "size_bytes": 732
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/example/expected.csv",
+      "path": "model/artifacts/cap128_weight3_v1/example/expected.csv",
       "sha256": "87eeb1e5d03bbb302701acae16ff17c4bed3cb90034ad8bf92bebaa8dbfcf63c",
       "size_bytes": 453
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/example/expected.csv.manifest.json",
+      "path": "model/artifacts/cap128_weight3_v1/example/expected.csv.manifest.json",
       "sha256": "3eb0d8eb83dd8596225a0b567602cd0a64c44d8154f280b80925b1d80f962f5f",
       "size_bytes": 1876
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/example/input.json",
+      "path": "model/artifacts/cap128_weight3_v1/example/input.json",
       "sha256": "c8e400bf677d228bf8683c5bb61c0cfb105e3a3f7b5b9235c06efdaf015a334e",
       "size_bytes": 106615
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/example_check.txt",
+      "path": "model/artifacts/cap128_weight3_v1/example_check.txt",
       "sha256": "4941b7d74c57b92bd2bb0b19cb0e0e00afa445caad187ecac891ffc45fa465c6",
       "size_bytes": 70
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/metadata.json",
+      "path": "model/artifacts/cap128_weight3_v1/metadata.json",
       "sha256": "32890e837bde8adb56c9c0c832c1394bf1f811d520994ebe1154b70f7d953d2a",
       "size_bytes": 1043
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/model.pt",
+      "path": "model/artifacts/cap128_weight3_v1/model.pt",
       "sha256": "b2d38ff29a918cb6213ad7df2c76786c5f56d3640bd055ff179d211b0e979668",
       "size_bytes": 98043
     },
     {
-      "path": "model_elgin/artifacts/cap128_weight3_v1/training_specification.json",
+      "path": "model/artifacts/cap128_weight3_v1/training_specification.json",
       "sha256": "ce6c40e89477659f7274e27de529c703e75e19881d421fa4aaf12cdcc2ad1e80",
       "size_bytes": 1965
     },
     {
-      "path": "model_elgin/context_reference_v1/common.py",
+      "path": "model/context_reference_v1/common.py",
       "sha256": "6a26cab89aea3155db924244bae1b69080c2f5037fb1ba00dc231d8487d30eaa",
       "size_bytes": 2927
     },
     {
-      "path": "model_elgin/context_reference_v1/context_features.py",
+      "path": "model/context_reference_v1/context_features.py",
       "sha256": "4a35f26e54aab767af0982f495f6d1abb7f5aa7bc1a3accb76e2bc3e0378c9e0",
       "size_bytes": 13503
     },
     {
-      "path": "model_elgin/context_reference_v1/data.py",
+      "path": "model/context_reference_v1/data.py",
       "sha256": "91f8a13e3ecb6cf5461c2f33a640f523e7884362c8545e4125f9f5c4b14ebf70",
       "size_bytes": 16859
     },
     {
-      "path": "model_elgin/context_reference_v1/model.py",
+      "path": "model/context_reference_v1/model.py",
       "sha256": "0fa59b34cd85f1981eccd910d704412cb54de6602fe05fbff8d7ab4362d402c2",
       "size_bytes": 8691
     },
     {
-      "path": "model_elgin/context_reference_v1/predict.py",
+      "path": "model/context_reference_v1/predict.py",
       "sha256": "fdc1a6bad52b725265d9f195fe4bf467266827cd6bbb130a8de5394bc4fb63c0",
       "size_bytes": 9575
     },
     {
-      "path": "model_elgin/context_reference_v1/prepare.py",
+      "path": "model/context_reference_v1/prepare.py",
       "sha256": "4d3e77c499fd620e7ab20db97115e7b400cf4e1aa13fb9760cee1975b9463167",
       "size_bytes": 806
     },
     {
-      "path": "model_elgin/context_reference_v1/requirements.txt",
+      "path": "model/context_reference_v1/requirements.txt",
       "sha256": "1fa7b45b5160586cbb4c8d15c2f75872d467354425d4adf9451b73c0ceab3355",
       "size_bytes": 75
     },
     {
-      "path": "model_elgin/context_reference_v1/train.py",
+      "path": "model/context_reference_v1/train.py",
       "sha256": "ffb6a7b157716c997ca46288817c8515c04ef5dd8c24506856f8ab84117d8dc5",
       "size_bytes": 30291
     },
     {
-      "path": "model_elgin/train_final.py",
+      "path": "model/train_final.py",
       "sha256": "1bbdc9ac95b41c8a28cfa4fe67e3d35d619a0a6bde74445580d33871ad6298d0",
       "size_bytes": 6720
     },
@@ -110,8 +110,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "6a7032ce496644ffd5c2b6dd59c492c2d3ec0fbfab3678575da60185ab9f84bd",
-      "size_bytes": 5389
+      "sha256": "78674a6268de2d3fa9b53649bfb70480d56e2abd6ad0ad5bd15902d4364d23cc",
+      "size_bytes": 5323
     }
   ],
   "original_payload_files": 19,

@@ -16,7 +16,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 "$HOME/.local/bin/uv" venv --python 3.12 --seed .venv
 source .venv/bin/activate
 python -m pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r model_elgin/context_reference_v1/requirements.txt
+python -m pip install -r model/context_reference_v1/requirements.txt
 python -m pip check
 ```
 
@@ -30,7 +30,7 @@ and native AWS Ubuntu 26.04 with Python 3.12.15.
 ## 2. Run the small prediction example
 
 ```bash
-python -B model_elgin/context_reference_v1/predict.py --input model_elgin/artifacts/cap128_weight3_v1/example/input.json --model model_elgin/artifacts/cap128_weight3_v1/model.pt --output example_predictions.csv --threads 4
+python -B model/context_reference_v1/predict.py --input model/artifacts/cap128_weight3_v1/example/input.json --model model/artifacts/cap128_weight3_v1/model.pt --output example_predictions.csv --threads 4
 ```
 
 Expected terminal result: `PASS: 10 sites / 1,887 reads, stage final_data0,
@@ -41,7 +41,7 @@ transcript_id,transcript_position,score
 ```
 
 Expected keys and scores are supplied in
-`model_elgin/artifacts/cap128_weight3_v1/example/expected.csv`. Allow an absolute
+`model/artifacts/cap128_weight3_v1/example/expected.csv`. Allow an absolute
 score difference of 0.000003 for platform-dependent floating-point arithmetic.
 The companion `example_predictions.csv.manifest.json` records input/model/code
 fingerprints, exact key coverage and use of all available reads. The example
@@ -77,13 +77,13 @@ redistributed here. In the command below, replace the two `LOCAL_DATA` paths
 with the locations of those original files:
 
 ```bash
-python -B -u model_elgin/train_final.py --input LOCAL_DATA/data0/dataset0.json.gz --labels LOCAL_DATA/data0/data.info.labelled --output-dir model_elgin/outputs/reproduced_final
+python -B -u model/train_final.py --input LOCAL_DATA/data0/dataset0.json.gz --labels LOCAL_DATA/data0/data.info.labelled --output-dir model/outputs/reproduced_final
 ```
 
 The command validates the original input/label fingerprints, prepares the
 label-free read cache, and fits fresh normalisers and model weights for the
 fixed 18 epochs using seed 2026, batch size 256 and four CPU threads. Settings
-are recorded in `model_elgin/artifacts/cap128_weight3_v1/training_specification.json`.
+are recorded in `model/artifacts/cap128_weight3_v1/training_specification.json`.
 No private historical model weights, CV checkpoints or experiment logs are
 required. The shared fold CSV and scoring helper are included because the
 training implementation imports and checks them.
@@ -101,9 +101,9 @@ reproducing this release's predictions. No small training example is required.
 
 ## Files
 
-- `model_elgin/context_reference_v1/`: parsing, model, prediction and training code.
-- `model_elgin/train_final.py`: fixed final-recipe training entry point.
-- `model_elgin/artifacts/cap128_weight3_v1/`: saved model, recipe, metadata and example.
+- `model/context_reference_v1/`: parsing, model, prediction and training code.
+- `model/train_final.py`: fixed final-recipe training entry point.
+- `model/artifacts/cap128_weight3_v1/`: saved model, recipe, metadata and example.
 - `model_evaluation/evaluate.py`: scorer required by the training implementation.
 - `eda/received/shared_folds/data0_folds.csv`: original shared gene-fold assignments.
 - `CODE_RELEASE_MANIFEST.json`: exact file fingerprints for this code release.

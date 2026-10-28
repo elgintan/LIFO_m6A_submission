@@ -4,7 +4,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 /LOCAL_DATA/
-/model_elgin/outputs/
+/model/outputs/
 /example_predictions.csv
 /example_predictions.csv.manifest.json
 *.pem
